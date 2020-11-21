@@ -9,6 +9,13 @@ namespace ExtensionMethods
             var s = "Hello World! my friends.";
             Console.WriteLine(s);
             Console.WriteLine(s.GetWordCount());
+            var myArray = s.ConvertToByteArray();
+            foreach (var caracter in myArray)
+            {
+                Console.Write(caracter + "-");
+            }
+            Console.WriteLine();
+            
         }
     }
 
@@ -19,5 +26,12 @@ namespace ExtensionMethods
             var arrayWords = str.Split(' ', StringSplitOptions.RemoveEmptyEntries);
             return arrayWords.Length;
         }
+
+        public static byte[] ConvertToByteArray(this String str)
+        {
+            return System.Text.Encoding.UTF8.GetBytes(str);
+        }
     }
+
+    
 }

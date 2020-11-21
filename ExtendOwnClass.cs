@@ -19,5 +19,15 @@ public class MyClass
         {
             return myclass.GetCount() + currency;
         }
+        public static string GetPluMinus(this MyClass myClass)
+        {
+            if (myClass.GetCount() >=0)
+            {
+                return "+" + myClass.GetCount();
+            }
+            return "-" + myClass.GetCount();
+        }
     } 
+
+   
 }

@@ -33,5 +33,7 @@ namespace ExtensionMethods
         {
             return System.Text.Encoding.UTF8.GetBytes(str);
         }
+
+        
     }
 }

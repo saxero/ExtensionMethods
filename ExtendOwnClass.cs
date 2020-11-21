@@ -25,9 +25,7 @@ public class MyClass
             {
                 return "+" + myClass.GetCount().ToString();
             }
-            else{
-                return "-" + myClass.GetCount();
-            }
+            return "-" + myClass.GetCount();
         }
     } 
 

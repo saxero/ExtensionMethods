@@ -23,11 +23,9 @@ public class MyClass
         {
             if (myClass.GetCount() >=0)
             {
-                return "+" + myClass.GetCount().ToString();
+                return myClass.GetCount().ToString();
             }
-            else{
-                return "-" + myClass.GetCount();
-            }
+            return "-" + myClass.GetCount();
         }
     } 
 

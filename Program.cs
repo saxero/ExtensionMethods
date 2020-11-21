@@ -26,7 +26,7 @@ namespace ExtensionMethods
         public static int GetWordCount(this String str)
         {
             var arrayWords = str.Split(' ', StringSplitOptions.RemoveEmptyEntries);
-            return arrayWords.Length;            
+            return arrayWords.Length;
         }
 
         public static byte[] ConvertToByteArray(this String str)
